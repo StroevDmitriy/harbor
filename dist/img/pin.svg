@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.074 30.111">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #105d75;
+      }
+    </style>
+  </defs>
+  <g id="pin" transform="translate(-85.333)">
+    <g id="Group_68" data-name="Group 68" transform="translate(85.333)">
+      <path id="Path_76" data-name="Path 76" class="cls-1" d="M95.37,0a10.038,10.038,0,0,0-8.832,14.807l8.283,14.981a.627.627,0,0,0,1.1,0L104.205,14.8A10.039,10.039,0,0,0,95.37,0Zm0,15.056a5.019,5.019,0,1,1,5.019-5.019A5.024,5.024,0,0,1,95.37,15.056Z" transform="translate(-85.333)"/>
+    </g>
+  </g>
+</svg>

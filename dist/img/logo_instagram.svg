@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.463 29.463">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #105d75;
+      }
+    </style>
+  </defs>
+  <g id="Group_57" data-name="Group 57" transform="translate(-238 -987)">
+    <g id="instagram" transform="translate(246.011 995.011)">
+      <path id="Path_58" data-name="Path 58" class="cls-1" d="M93.277,80.326h-10.5a1.743,1.743,0,0,0-1.741,1.741V92.7a1.743,1.743,0,0,0,1.741,1.741h10.5A1.743,1.743,0,0,0,95.019,92.7V82.067A1.743,1.743,0,0,0,93.277,80.326ZM93.369,92.7a.092.092,0,0,1-.092.092h-10.5a.092.092,0,0,1-.092-.092V82.067a.092.092,0,0,1,.092-.092h10.5a.092.092,0,0,1,.092.092Z" transform="translate(-81.034 -80.326)"/>
+      <rect id="Rectangle_131" data-name="Rectangle 131" class="cls-1" width="1.889" height="1.733" transform="translate(9.399 2.886)"/>
+      <circle id="Ellipse_106" data-name="Ellipse 106" class="cls-1" cx="1.863" cy="1.863" r="1.863" transform="translate(5.13 5.893)"/>
+      <path id="Path_59" data-name="Path 59" class="cls-1" d="M117.723,151.735a2.971,2.971,0,0,1-5.942,0l0-1.324h-1.329v4.927h8.592v-4.927H117.73Z" transform="translate(-107.759 -143.988)"/>
+    </g>
+    <g id="Group_56" data-name="Group 56" transform="translate(238 987)">
+      <path id="Path_60" data-name="Path 60" class="cls-1" d="M29.463,14.731A14.731,14.731,0,1,0,14.731,29.463,14.732,14.732,0,0,0,29.463,14.731Zm-28.124,0A13.392,13.392,0,1,1,14.731,28.124,13.392,13.392,0,0,1,1.339,14.731Z"/>
+    </g>
+  </g>
+</svg>

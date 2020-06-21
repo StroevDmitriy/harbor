@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Выбрать квартиру</title>
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="choose">
+	<section class="main">
+		<header class="header">
+			<div class="container d-flex">
+				<div class="logo-container">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<nav>
+					<ul class="main-nav d-flex overflow-hidden">
+						<li class="nav-item parent_item">
+							<a href="about_estate.html">О комплексе</a>
+							<ul class="submenu">
+								<li>
+									<a href="about_estate.html">Описание</a>
+								</li>
+								<li>
+									<a href="about_estate.html#infrastructure">Инфраструктура</a>
+								</li>
+								<li>
+									<a href="interior.html">Отделка</a>
+								</li>
+								<li>
+									<a href="about_estate.html#media">Галерея</a>
+								</li>
+								<li>
+									<a href="about_estate.html#constr-progress">Ход строительства</a>
+								</li>
+								<li>
+									<a href="news.html">Новости</a>
+								</li>
+								<li>
+									<a href="documents.html">Документы</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="about_company.html">О компании</a>
+						</li>
+						<li class="nav-item active">
+							<a href="choose_apt.html">Выбрать квартиру</a>
+						</li>
+						<li class="nav-item">
+							<a href="bought_conditions.html">Условия покупки</a>
+						</li>
+						<li class="nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+					<div class="burger d-lg-none d-flex">
+						<span></span>
+					</div>
+				</nav>
+				<a href="tel:8(812)2003030" class="tel d-none d-sm-flex">8 812 200 30 30</a>
+			</div>
+		</header>
+		<div class="container content">
+			<div class="filter-block">
+				<div class="title-row d-block d-lg-flex">
+					<div class="title">
+						Выбрать квартиру по параметрам
+					</div>
+					<a href="#" class="plane3d-link">Выбрать на 3D-плане</a>
+				</div>
+				<div class="row common-filters">
+					<div class="col-12 col-md-6">
+						<div class="price-filter">
+							<div class="title">
+								Цена, руб.
+							</div>
+							<div class="limits">
+								<input type="text" class="lower-limit" placeholder="от">
+								<input type="text" class="upper-limit" placeholder="до">
+							</div>
+						</div>
+						<div class="room-filter">
+							<div class="title">
+								Количество комнат
+							</div>
+							<div class="content">
+								<label>
+									<input type="checkbox" id="check_studio">
+									<div class="item item_studio">
+										Студия
+									</div>
+								</label>
+								<label>
+									<input type="checkbox" id="check_1">
+									<div class="item item_one-room">
+										1
+									</div>
+								</label>
+								<label>
+									<input type="checkbox" id="check_2">
+									<div class="item item_two-rooms">
+										2
+									</div>
+								</label>
+								<label>
+									<input type="checkbox" id="check_3">
+									<div class="item item_three-rooms">
+										3
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="area-filter">
+							<div class="title">
+								Общая площадь, М
+							</div>
+							<div class="limits">
+								<input type="text" class="lower-limit" placeholder="от">
+								<input type="text" class="upper-limit" placeholder="до">
+							</div>
+						</div>
+						<div class="floor-filter">
+							<div class="title">
+								Этаж
+							</div>
+							<div class="filter-content d-block d-sm-flex">
+								<div class="main-filter">
+									<div class="limits">
+										<input type="text" class="lower-limit" placeholder="от">
+										<input type="text" class="upper-limit" placeholder="до">
+									</div>
+								</div>
+								<div class="add-filter">
+									<label>
+										<input type="checkbox">
+										Не первый
+									</label>
+									<label>
+										<input type="checkbox">
+										Не последний
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="additional-filters-block">
+					<div class="additional-filters">
+						<div class="check-container">
+							<label>
+								<input type="checkbox">
+								<span></span>
+								с большой кухней
+							</label>
+						</div>
+						<div class="check-container">
+							<label>
+								<input type="checkbox">
+								<span></span>
+								европланировка
+							</label>
+						</div>
+						<div class="check-container">
+							<label>
+								<input type="checkbox">
+								<span></span>
+								раздельный санузел
+							</label>
+						</div>
+						<div class="check-container">
+							<label>
+								<input type="checkbox">
+								<span></span>
+								гардеробная
+							</label>
+						</div>
+						<div class="check-container">
+							<label>
+								<input type="checkbox">
+								<span></span>
+								двухсторонняя планировка
+							</label>
+						</div>
+					</div>
+					<div class="buttons-block">
+						<button id="filter-out" class="filter-out">Показать</button>
+						<button id="filter-off" class="filter-off">Сбросить фильтры</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="app-list">
+		<div class="container">
+			<div class="sorters d-flex">
+				<button class="sort_item" id="sort_room" type="button">Кол-во комнат</button>
+				<button class="sort_item" id="sort_area" type="button">Общая площадь</button>
+				<button class="sort_item" id="sort_floor" type="button">Этаж</button>
+				<button class="sort_item" id="sort_price" type="button">Цена</button>
+				<div class="sort-order">
+					<button id="sort-decrease">
+					</button>
+					<button id="sort-increase">
+					</button>
+				</div>
+			</div>
+			<div class="content">
+				<div class="item">
+					<a href="apt_card.html">
+						<div class="desc-col">
+							<div class="main-info">
+								<div class="rooms">
+									3 комнаты
+								</div>
+								<div class="area">
+									80 м.
+								</div>
+							</div>
+							<div class="location">
+								<div class="floor">
+									2 этаж из 12
+								</div>
+								<div class="building">
+									Корпус 4
+								</div>
+							</div>
+							<div class="layout">
+								<div class="layout-item">
+									с большой кухней
+								</div>
+								<div class="layout-item">
+									европланировка
+								</div>
+								<div class="layout-item">
+									раздельный санузел
+								</div>
+							</div>
+						</div>
+						<div class="plan-col">
+							<div class="price">
+								3 025 856 р.
+							</div>
+							<div class="plan-container">
+								<img src="img/layout.jpg" alt="">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="apt_card.html">
+						<div class="desc-col">
+							<div class="main-info">
+								<div class="rooms">
+									3 комнаты
+								</div>
+								<div class="area">
+									80 м.
+								</div>
+							</div>
+							<div class="location">
+								<div class="floor">
+									2 этаж из 12
+								</div>
+								<div class="building">
+									Корпус 4
+								</div>
+							</div>
+							<div class="layout">
+								<div class="layout-item">
+									с большой кухней
+								</div>
+							</div>
+						</div>
+						<div class="plan-col">
+							<div class="price">
+								3 025 856 р.
+							</div>
+							<div class="plan-container">
+								<img src="img/layout.jpg" alt="">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="apt_card.html">
+						<div class="desc-col">
+							<div class="main-info">
+								<div class="rooms">
+									3 комнаты
+								</div>
+								<div class="area">
+									80 м.
+								</div>
+							</div>
+							<div class="location">
+								<div class="floor">
+									2 этаж из 12
+								</div>
+								<div class="building">
+									Корпус 4
+								</div>
+							</div>
+							<div class="layout">
+								<div class="layout-item">
+									с большой кухней
+								</div>
+								<div class="layout-item">
+									европланировка
+								</div>
+								<div class="layout-item">
+									раздельный санузел
+								</div>
+							</div>
+						</div>
+						<div class="plan-col">
+							<div class="price">
+								3 025 856 р.
+							</div>
+							<div class="plan-container">
+								<img src="img/layout.jpg" alt="">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="apt_card.html">
+						<div class="desc-col">
+							<div class="main-info">
+								<div class="rooms">
+									3 комнаты
+								</div>
+								<div class="area">
+									80 м.
+								</div>
+							</div>
+							<div class="location">
+								<div class="floor">
+									2 этаж из 12
+								</div>
+								<div class="building">
+									Корпус 4
+								</div>
+							</div>
+							<div class="layout">
+								<div class="layout-item">
+									европланировка
+								</div>
+							</div>
+						</div>
+						<div class="plan-col">
+							<div class="price">
+								3 025 856 р.
+							</div>
+							<div class="plan-container">
+								<img src="img/layout.jpg" alt="">
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="show_all">
+			Показать все 115 квартир 
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="first-row d-flex">
+				<div class="logo-container">
+					<a href="index.html">
+						<img src="img/logo_blue.svg" alt="">
+					</a>
+				</div>
+				<a href="tel:8(812)2003030" class="tel">8 812 200 30 30</a>
+			</div>
+			<div class="second-row row">
+				<div class="social-block order-2 order-lg-1 col-12 col-lg-2">
+					<a href="#" class="item item_vk">
+						<img src="img/logo_vk.svg" alt="">
+					</a>
+					<a href="#" class="item item_fb">
+						<img src="img/logo_facebook.svg" alt="">
+					</a>
+					<a href="#" class="item item_inst">
+						<img src="img/logo_instagram.svg" alt="">
+					</a>
+				</div>
+				<div class="nav-block order-1 order-lg-2 col-12 col-lg-8 d-none d-md-flex">
+					<ul>
+						<li>
+							<a href="about_estate.html">О комплексе</a>
+						</li>
+						<li>
+							<a href="about_company.html">О компании</a>
+						</li>
+						<li class="active">
+							<a href="choose_apt.html">Выбрать квартиру</a>
+						</li>
+						<li>
+							<a href="bought_conditions.html">Условия покупки</a>
+						</li>
+						<li>
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="empty order-lg-3 d-none d-lg-block col-lg-2">
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
